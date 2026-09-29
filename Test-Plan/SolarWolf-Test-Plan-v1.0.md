@@ -3,7 +3,7 @@
 | 项目 | 内容 |
 | --- | --- |
 | 文档版本 | v1.0 |
-| 状态 | 已建立，待编写正式测试用例并执行 |
+| 状态 | 测试周期文档已完成；BUG-UI-001 保持开放，待获得修复构建后回归 |
 | 被测游戏 | SolarWolf 1.6.0 |
 | 被测对象说明 | SolarWolf 是 Pete “ShredWheat” Shinners 创作的开源 Python/Pygame 游戏。本 QA 项目的个人成果仅包括测试设计、测试执行、缺陷报告、缺陷分析和自动化测试，不包含 SolarWolf 游戏源码的创作归属。 |
 | 测试依据 | [第一轮探索性测试记录](../Exploratory-Testing/Exploratory-Session-01.md)；[主动黑盒测试记录](Active-Black-Box-Test-Record-01.md) |
@@ -39,6 +39,7 @@
 | 操作系统 | Windows 11 家庭中文版，64 位，Build 26200 |
 | Python | Python 3.11.9 |
 | 图形库 | Pygame 2.6.1 |
+| pytest | pytest 9.1.1 |
 | 游戏版本 | SolarWolf 1.6.0（项目元数据版本） |
 | 启动方式 | 在 SolarWolf 本地源码目录中，以 Python 模块方式启动 |
 | 游戏界面语言 | 英文 |

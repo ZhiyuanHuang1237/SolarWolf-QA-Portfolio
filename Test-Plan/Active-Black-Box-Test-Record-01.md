@@ -46,11 +46,11 @@
 
 | 文件 | 记录内容 |
 | --- | --- |
-| `Evidence/Game-Records/Game-Record-01-save-selection.png` | 游戏记录：存档选择界面；可见 `Lives Used: 23` 字段。 |
-| `Evidence/Game-Records/Game-Record-02-normal-gameplay.png` | 游戏记录：正常游戏界面，右侧 HUD 完整显示。 |
-| `Evidence/Game-Records/Game-Record-03-focus-return-paused.png` | 游戏记录：首次切换窗口后返回的暂停界面；可见 `Paused` 与 `Press Any Key To Continue`。该图被 BUG-UI-001 用作复现上下文引用。 |
-| `Evidence/Bug-UI-001/BUG-UI-001-02-incomplete-pause-panel.png` | BUG-UI-001 异常状态：暂停提示面板仅剩轮廓，文字和面板内容未完整重绘。 |
-| `Evidence/Bug-UI-001/BUG-UI-001-03-incomplete-hud-redraw.png` | BUG-UI-001 异常状态：右侧 HUD 仅显示局部图形和空白区域，未完整重绘。 |
+| [`../Evidence/Game-Records/Game-Record-01-save-selection.png`](../Evidence/Game-Records/Game-Record-01-save-selection.png) | 游戏记录：存档选择界面；可见 `Lives Used: 23` 字段。 |
+| [`../Evidence/Game-Records/Game-Record-02-normal-gameplay.png`](../Evidence/Game-Records/Game-Record-02-normal-gameplay.png) | 游戏记录：正常游戏界面，右侧 HUD 完整显示。 |
+| [`../Evidence/Game-Records/Game-Record-03-focus-return-paused.png`](../Evidence/Game-Records/Game-Record-03-focus-return-paused.png) | 游戏记录：首次切换窗口后返回的暂停界面；可见 `Paused` 与 `Press Any Key To Continue`。该图被 BUG-UI-001 用作复现上下文引用。 |
+| [`../Evidence/Bug-UI-001/BUG-UI-001-02-incomplete-pause-panel.png`](../Evidence/Bug-UI-001/BUG-UI-001-02-incomplete-pause-panel.png) | BUG-UI-001 异常状态：暂停提示面板仅剩轮廓，文字和面板内容未完整重绘。 |
+| [`../Evidence/Bug-UI-001/BUG-UI-001-03-incomplete-hud-redraw.png`](../Evidence/Bug-UI-001/BUG-UI-001-03-incomplete-hud-redraw.png) | BUG-UI-001 异常状态：右侧 HUD 仅显示局部图形和空白区域，未完整重绘。 |
 
 ### 3.2 游戏记录照片
 
@@ -70,6 +70,6 @@
 
 ## 4. 后续衔接
 
-- 这些主动黑盒结果将用于编写后续正式 Test Cases，但不等同于正式用例执行数据。
-- BUG-UI-001 已满足进入白盒分析的条件：具备明确复现路径和视觉证据。
-- 计时器精确临界点、护盾无敌窗口和道具跨边界的帧级判定，不作为手工黑盒主测试项；后续结合源码分析和 pytest 选择性验证。
+- 这些主动黑盒结果已作为正式 Test Cases 的设计依据，但本记录本身仍与逐条手工用例执行记录分开保存。
+- BUG-UI-001 已完成初步白盒分析：具备明确复现路径和视觉证据，但尚未确认根因。
+- 计时器精确临界点、护盾无敌窗口和道具跨边界的帧级判定，未作为手工黑盒主测试项；已结合源码分析和 pytest 选择性验证。
